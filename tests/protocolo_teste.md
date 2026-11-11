@@ -1,5 +1,7 @@
 # Teste piloto de mesa — versão 0.2.0
 
+> Registro histórico da 0.2.0. Os limites de palavras e a ordem de saída abaixo são daquela versão; para a edição atual, valem o SKILL.md e [casos_validacao.md](casos_validacao.md).
+
 Método: aplicações analíticas e casos sintéticos contrastivos. **Não é** um teste automatizado de desempenho de um modelo de IA, experimento cego nem validação com avaliadores externos. Para cada caso, aplicaram-se as regras da skill e registraram-se forma, função e alerta epistemológico.
 
 | Caso | Entrada abreviada | Forma | Função do trecho | Controle esperado |
@@ -24,7 +26,7 @@ Método: aplicações analíticas e casos sintéticos contrastivos. **Não é** 
 
 ## Critérios de aceitação para validação futura
 
-- Ordenação do output 100%: MAPA → FUNÇÃO → SUFICIÊNCIA → ORIENTAÇÃO.
+- Ordenação do output 100%: MAPA → FUNÇÃO → SUFICIÊNCIA → ORIENTAÇÃO (critério da 0.2.0). A partir da 0.3.0: MAPA → CLASSIFICAÇÃO E CONGRUÊNCIA → PONTOS FORTES → PONTOS FRÁGEIS → ORIENTAÇÃO → LIMITE.
 - Pelo menos 90% de concordância entre avaliadores na identificação de proposições principais e vínculos, com rubricas acordadas previamente (meta, não resultado).
 - Nenhuma declaração de sustentação verificada sem localizador de evidência.
 - Casos mistos e indeterminados não forçados a três categorias exclusivas.

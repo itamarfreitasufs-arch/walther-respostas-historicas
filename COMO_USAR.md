@@ -1,4 +1,6 @@
-# Como usar Walther v0.3.0
+# Como usar Walther v0.3.1
+
+Forneça ao assistente o [SKILL.md](SKILL.md). As pastas `references/` e `examples/` são apoio; o exemplo no formato atual está em [examples/caso_v03.md](examples/caso_v03.md).
 
 **Modo padrão:** "Walther, analise a pergunta central [pergunta], cuja seção se intitula [título literal], e o seguinte texto integral [texto ou arquivo]. Quero mapa lógico e parecer breve."
 

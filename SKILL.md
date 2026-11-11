@@ -1,12 +1,13 @@
 ---
 name: walther
-version: 0.3.0
-description: Identificar e mapear a arquitetura lógica de respostas em textos de pesquisa histórica, avaliar se o texto desempenha funções de resultados ou de conclusão/considerações finais, e orientar revisões fundamentadas. Entrada: pergunta central, título original da seção e texto integral; evidências adicionais opcionais. Saída: mapa lógico, classificação da função e parecer formativo breve.
+description: "Identificar e mapear a arquitetura lógica de respostas em textos de pesquisa histórica, avaliar se o texto desempenha funções de resultados ou de conclusão/considerações finais, e orientar revisões fundamentadas. Entrada: pergunta central, título original da seção e texto integral; evidências adicionais opcionais. Saída: mapa lógico, classificação da função e parecer formativo breve."
+metadata:
+  version: "0.3.1"
 ---
 
 # Walther — Mapear e avaliar respostas históricas
 
-Versão experimental 0.3.0, 10 de novembro de 2026. Projeto metodológico desenvolvido nesta conversa a partir de princípios da lógica das perguntas, da tipologia kantiana de relações dos juízos (categórica, hipotética, disjuntiva) ampliada operacionalmente pela conjunção, de estudos sociorretóricos em História e da Jason 0.5.4. **Não** atribuir a Walther a autoria da quarta classe, de todas as regras abaixo ou uma validação empírica inexistente. O livro integral *Logik der Fragen* (1985) não foi consultado nesta preparação.
+Versão experimental 0.3.1, 11 de novembro de 2026 (correção da 0.3.0, de 10 de novembro de 2026). Projeto metodológico desenvolvido com assistência de IA, em conversas de preparação, a partir de princípios da lógica das perguntas, da tipologia kantiana de relações dos juízos (categórica, hipotética, disjuntiva) ampliada operacionalmente pela conjunção, de estudos sociorretóricos em História e da Jason 0.5.4. **Não** atribuir a Walther a autoria da quarta classe, de todas as regras abaixo ou uma validação empírica inexistente. O livro integral *Logik der Fragen* (1985) não foi consultado nesta preparação.
 
 ## Missão
 
@@ -26,12 +27,12 @@ Modo exploratório: somente texto, se explicitamente pedido. Reconstruir uma **p
 ## Fluxo obrigatório
 
 1. Fixar material, **título de seção literalmente informado ou ausência confirmada**, cobertura, originalidade da pergunta e localizadores. Se o texto for fragmento, declarar a leitura parcial. Não atribuir redações do analista ao autor.
-2. Identificar a **demanda lógica** de Q (identificação, caracterização, comparação, processo, condição, causa, significado etc.) e a **resposta mínima compatível**. Não substituir 'como' por 'por que' automaticamente. Preserve sujeitos, tempo, espaço, modalidade e força relacional.
+2. Identificar a **demanda lógica** de Q (identificação, caracterização, comparação, processo, condição, causa, significado etc.) e a **resposta mínima compatível**. Não substituir 'como' por 'por que' automaticamente. Preservar sujeitos, tempo, espaço, modalidade e força relacional.
 3. Segmentar o texto em proposições com IDs estáveis (`P1a`, `P1b` etc.). Citar trechos curtos com localizadores; quando houver mais de uma operação num parágrafo, dividir em proposições, não forçar classificação unitária.
 4. Reconstruir **resposta central candidata (Rc)** com ancoragem nos trechos. Marcar literal/paráfrase do analista. Admitir `Rc1/Rc2` quando múltiplas centrais plausíveis e expor relação incerta.
-5. INTERNAMENTE produzir o **MAPA LÓGICO DA RESPOSTA**, com: pergunta e lacuna; Rc; nós das proposições; ligação entre nós e Rc; função de cada ligação (sustenta, compõe, condiciona, qualifica, alternativa, contrasta, contexto); estrutura proposicional (CATEGÓRICA, HIPOTÉTICA, DISJUNTIVA, CONJUNTIVA, compostas, indeterminada); localizar passagens. O diagrama pode ser textual e deve ser acompanhado de tabela legível. Não confundir lista de ações com explicação dos mecanismos.
+5. INTERNAMENTE produzir o **MAPA LÓGICO DA RESPOSTA**, com: pergunta e lacuna; Rc; nós das proposições; ligação entre nós e Rc; função de cada ligação (sustenta, compõe, condiciona, qualifica, alternativa, contrasta, contexto); estrutura proposicional (CATEGÓRICA, HIPOTÉTICA, DISJUNTIVA, CONJUNTIVA, compostas, indeterminada); localizar passagens. O diagrama pode ser textual. A tabela de proposições acompanha o mapa somente no relatório detalhado. Não confundir lista de ações com explicação dos mecanismos.
 6. INTERNAMENTE produzir **PARECER DE FUNÇÃO TEXTUAL E CONGRUÊNCIA DO TÍTULO**: distinguir **função declarada** (título literal fornecido), **função efetiva** (resultado da análise) e **juízo de correspondência** (congruente, parcialmente congruente, incongruente, indeterminável, título ausente declarado). A denominação não decide a função. O parecer utiliza: `RESULTADOS` (apresentação/demonstração de achados), `FECHAMENTO CONCLUSIVO` (resposta integradora/inferencial), `FECHAMENTO REFLEXIVO` (posicionamento, alcance e limites), `MISTO`, ou `INDETERMINADO`. Recomendar o rótulo editorial `Resultados` ou `Conclusão / Considerações finais` apenas quando o conteúdo e o contexto permitirem. Conclusão e Considerações finais são títulos frequentemente intercambiáveis; apontar predomínio reflexivo sem inventar separação universal.
-7. INTERNAMENTE produzir **PARECER DE SUFICIÊNCIA** de forma concisa: (a) congruência Q→Rc; (b) composição e hierarquia; (c) justificações verificáveis no material; (d) proporcionalidade entre afirmações e evidências; (e) alcance, alternativas e limites. Distinguir insuficiência demonstrada, dúvida do analista, material faltante e melhoria editorial facultativa.
+7. INTERNAMENTE produzir **PARECER DE SUFICIÊNCIA** de forma concisa: (a) congruência Q→Rc; (b) composição e hierarquia; (c) justificações verificáveis no material; (d) proporcionalidade entre afirmações e evidências; (e) alcance, alternativas e limites. Distinguir insuficiência demonstrada, dúvida do analista, material faltante e melhoria editorial facultativa. Na saída padrão, esse exame aparece apenas nos pontos fortes e frágeis; a auditoria completa pertence ao relatório detalhado.
 8. Preparar até **3 PERGUNTAS FORMATIVAS** para o relatório aprofundado, apenas se houver lacunas ou decisões substanciais reais; na resposta padrão mostrar no máximo uma. Se o texto estiver adequado, declarar sem inventar reparos. Nunca reescrever o texto integral ou alterar dados sem solicitação.
 
 ## Tipologia de relações — dois níveis diferentes
@@ -51,7 +52,7 @@ Modo exploratório: somente texto, se explicitamente pedido. Reconstruir uma **p
 - A resposta pode ser possível e pertinente sem estar demonstrada como verdadeira. Se faltarem fontes, usar 'não verificável com o material recebido', jamais 'falsa' por ausência de fonte.
 - Preservar verbos modalizadores ('pode', 'sugere', 'em parte') e limites.
 - Não elevar associação a causalidade, intenção a efeito, sucessão a determinação, nem fatores enumerados a mecanismo conjunto comprovado.
-- Uma função de resultados pode conter inferência local; uma conclusão pode conter recapitulacão de resultados; um fechamento pode refletir sem fornecer uma nova resposta. Classificar por operação regente e reconhecer híbridos.
+- Uma função de resultados pode conter inferência local; uma conclusão pode conter recapitulação de resultados; um fechamento pode refletir sem fornecer uma nova resposta. Classificar por operação regente e reconhecer híbridos.
 - Sempre distinguir o que é **trecho literal**, **reconstrução do analista**, **exemplo fictício** e **avaliação não verificada**.
 - A skill não valida competência do autor nem produz parecer final de qualidade da tese.
 
@@ -82,8 +83,8 @@ Importar de Jason somente os resultados efetivamente fornecidos; registrar vers�
 
 ## Respaldo e limites
 
-Ver `references/fundamentacao.md`, `references/classificacao.md`, `examples/casos.md`, `tests/protocolo_teste.md`. Experimental: não há validação por avaliadores independentes, nem comparação controlada de eficácia com Jason.
+Ver `references/fundamentacao.md`, `references/classificacao.md`, `examples/caso_v03.md` (formato atual), `examples/casos.md` e `tests/protocolo_teste.md` (versões anteriores). Experimental: não há validação por avaliadores independentes, nem comparação controlada de eficácia com Jason.
 
-## Preparação para publicação
+## Distribuição e licença
 
 Autoria do protocolo: Itamar Freitas. Preparação e testes de mesa com assistência de IA; versão experimental. Conteúdo de pesquisas de terceiros não integra a distribuição. A licença de redistribuição permanece **pendente de decisão do autor**; não presumir licença da Jason nem da Perelman. A citação sugerida não implica DOI. Para descrever resultados de testes, distinguir verificações estruturais, casos sintéticos e avaliação independente ainda não realizada.

@@ -1,6 +1,6 @@
 # Walther — Historical Research Answers | Respostas de pesquisa histórica
 
-**Walther v0.3.0 (experimental)** — protocolo de Itamar Freitas, preparado com assistência de IA. Skill de **mapear, classificar e avaliar respostas históricas**. Complementa a Jason (perguntas), a Sager (definições) e a Perelman (exemplificação).
+**Walther v0.3.1 (experimental)** — protocolo de Itamar Freitas, preparado com assistência de IA. Skill de **mapear, classificar e avaliar respostas históricas**. Complementa a Jason (perguntas), a Sager (definições) e a Perelman (exemplificação).
 
 ## Inputs obrigatórios
 
@@ -34,4 +34,4 @@ A tipologia operacional combina relações categóricas, hipotéticas e disjunti
 
 ## Autoria e citação
 
-© 2026 Itamar Freitas. Veja [CITATION.cff](CITATION.cff). **Licença de redistribuição pendente de decisão do autor** — conferir [LICENCA_PENDENTE.md](LICENCA_PENDENTE.md) antes da publicação.
+© 2026 Itamar Freitas. Veja [CITATION.cff](CITATION.cff). **Licença de redistribuição pendente de decisão do autor** — conferir [LICENCA_PENDENTE.md](LICENCA_PENDENTE.md) antes de redistribuir ou adaptar.
